@@ -134,7 +134,7 @@ namespace ERD2
 
             filaDePacientes.Enfileira(paciente);
 
-            Console.WriteLine("O contato {0} foi inserido com sucesso.", paciente.Nome);
+            Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
         }
         #endregion
 
