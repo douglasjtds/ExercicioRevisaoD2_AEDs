@@ -8,7 +8,6 @@ namespace ERD2.TADs.Interfaces
 {
     public interface IFila
     {
-        //void CriaFilaVazia();
         void Enfileira(Object x);
         Object Desenfileira();
         bool IsFilaVazia();
