@@ -8,8 +8,8 @@ namespace ERD2.TADs.Interfaces
 {
     public interface IFilaEncadeada
     {
-        //void Enfileira(Object x);
-        //Object Desenfileira();
-        //bool IsFilaVazia();
+        void Enfileira(Object x);
+        Object Desenfileira();
+        bool IsFilaVazia();
     }
 }

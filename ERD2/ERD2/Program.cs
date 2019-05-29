@@ -89,6 +89,8 @@ namespace ERD2
                 Console.WriteLine("------[Atividade 1]------");
                 Console.WriteLine("\n");
                 Console.WriteLine("[ 1 ] Incluir novo paciente");
+                Console.WriteLine("[ 2 ] Novo coração recebido -> consultar próximo paciente para ser operado");
+                Console.WriteLine("[ 3 ] Consultar o tamanho da fila de espera");
 
 
                 Console.WriteLine("\n");
@@ -103,6 +105,14 @@ namespace ERD2
                         IncluirNovoPaciente();
                         break;
 
+                    case 2:
+                        NovoCoracao_ConsultarProximoPaciente();
+                        break;
+
+                    case 3:
+                        ConsultarTamanhoFilaDeEspera();
+                        break;
+
                     default:
                         SaiPrograma();
                         break;
@@ -110,8 +120,8 @@ namespace ERD2
 
             } while (funcaoExecutada != 0);
             #endregion
-
         }
+
         public static void IncluirNovoPaciente()
         {
             Console.Clear();
@@ -130,18 +140,28 @@ namespace ERD2
             paciente.Telefone = Int32.Parse(Console.ReadLine());
 
             Console.Write("Grau de Urgência: ");
-            paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());  //como receber um enum
+            paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());
 
             filaDePacientes.Enfileira(paciente);
 
             Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
+        }
+
+        private static void NovoCoracao_ConsultarProximoPaciente()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void ConsultarTamanhoFilaDeEspera()
+        {
+            throw new NotImplementedException();
         }
         #endregion
 
         #region Atividade 2
         /// <summary>
         /// Atividade 2: Implemente um programa utilizando qualquer TAD para cadastrar os contatos de uma lista telefônica.
-        /// Para cada contato cadastrado, o programa deverá solicitar: nome, telefone e e-mail.O programa deve permitir
+        /// Para cada contato cadastrado, o programa deverá solicitar: nome, telefone e e-mail. O programa deve permitir
         /// imprimir todos os contatos cadastrados.
         /// </summary>
         private static void Atividade2()

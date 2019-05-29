@@ -7,50 +7,42 @@ using System.Threading.Tasks;
 
 namespace ERD2.TADs
 {
-    public class Fila : IFila //encadeada
+    public class Fila : IFila //com arranjo
     {
-        //private Object[] item; //isso é pra fila com arranjo
-        private Celula frente;
-        private Celula tras;
+        private Object[] item;
 
-        public Fila()
+        private int frente, tras;
+
+        public Fila(int maxTam) //cria lista vazia
         {
-            frente = new Celula();
-            tras = frente;
-            frente.prox = null;
+            this.item = new Object[maxTam];
+            this.frente = 0;
+            this.tras = this.frente;
         }
 
         #region [Métodos herdados da interface base]
 
-        public void Enfileira(object x)
+        public void Enfileira(Object x)
         {
-            this.tras.prox = new Celula();
-            this.tras = this.tras.prox;
-            this.tras.item = x;
-            this.tras.prox = null;
+            if ((this.tras + 1) % this.item.Length == this.frente) //NÃO ENTENDI ISSO?
+                throw new Exception("Erro: A fila está cheia!");
+            this.item[this.tras] = x; //inserindo no último elemento
+            this.tras = (this.tras + 1) % this.item.Length;
         }
 
         public Object Desenfileira()
         {
-            Object item = null;
             if (this.IsFilaVazia())
                 throw new Exception("Erro: A fila está vazia!");
-            frente = frente.prox;
-            item = frente.item;
+            Object item = this.item[this.frente];
+            this.frente = (this.frente + 1) % this.item.Length;
             return item;
         }
 
-
         public bool IsFilaVazia()
         {
-            return (frente == tras);
+            return (this.frente == this.tras);
         }
         #endregion
-
-        private class Celula
-        {
-            internal Object item;
-            internal Celula prox;
-        }
     }
 }
