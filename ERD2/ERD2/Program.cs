@@ -1,5 +1,6 @@
 ﻿using ERD2.Atividade_1;
 using ERD2.TADs;
+using ERD2.TADs.Implementacoes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace ERD2
 {
     public class Program
     {
+        //private static Lista listaDeContatos;
         private static Fila filaDePacientes;
 
 
@@ -78,7 +80,7 @@ namespace ERD2
         /// </summary>
         private static void Atividade1()
         {
-            filaDePacientes = new Fila();
+            filaDePacientes = new Fila(10);
 
             #region Atividade 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
@@ -166,6 +168,7 @@ namespace ERD2
         /// </summary>
         private static void Atividade2()
         {
+
         }
         #endregion
 

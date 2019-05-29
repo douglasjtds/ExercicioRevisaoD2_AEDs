@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERD2.TADs
+namespace ERD2.TADs.Implementacoes
 {
     public class FilaEncadeada : IFilaEncadeada //encadeada
     {

@@ -8,7 +8,7 @@ namespace ERD2.TADs.Interfaces
 {
     public interface ILista
     {
-        void CriaListaVazia(int maxTam);
+        //void CriaListaVazia(int maxTam);
         Object Pesquisa(Object chave);
         void Insere(Object chave);
         Object Retira(Object chave);
