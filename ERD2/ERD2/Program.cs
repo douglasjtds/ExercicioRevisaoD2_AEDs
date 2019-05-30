@@ -108,7 +108,7 @@ namespace ERD2
                         break;
 
                     case 2:
-                        NovoCoracao_ConsultarProximoPaciente();
+                        NovoCoracao_ConsultarProximoPaciente(listaEncadeadaDePacientes);
                         break;
 
                     case 3:
@@ -153,7 +153,7 @@ namespace ERD2
         {
             //var pacienteComMaisUrgencia = listaEncadeadaDePacientesRecebida.Retira(x => x.)
             //while (!listaEncadeadaDePacientesRecebida.IsListaVazia())
-            //    listaEncadeadaDePacientesRecebida.
+            //    listaEncadeadaDePacientesRecebida.Retira(chave => Paciente.Equals));
 
             //------------- COMO PERCORRER ESSA LISTA CHAMANDO O RETIRA PRO ELEMENTO QUE TEM O MAIOR GrauDeUrgencia?????
         }
@@ -245,7 +245,14 @@ namespace ERD2
 
         #region Atividade 3
         /// <summary>
-        /// 
+        /// Atividade 3: Uma agência bancária estatal está sofrendo com o mau atendimento aos clientes. Suas filas são gigantescas! O gerente decidiu contratá-lo para que você 
+        /// crie uma simulação do atendimento da agência e permita que ele faça experimentos para melhorar o atendimento.
+        /// O gerente vai informar a quantidade de minutos que ele deseja executar a simulação. Na agência existem 5 caixas. A cada minuto chegam de 4 a 16 clientes.
+        /// Cada caixa atende de 1 a 2 clientes por minuto. Sempre o cliente dá preferência para alguma caixa vazia ou para uma fila com menor número de clientes. 
+        /// Para cada cliente que entra na fila deve-se registrar o momento (tempo) que ele entrou na fila. Quando o cliente for atendido deve-se computar a 
+        /// diferença entre o tempo atual e o tempo de entrada na fila. Este dado vai servir para calcular o tempo médio dos clientes na fila.
+        /// O programa deve informar, por minuto, a quantidade de clientes sendo atendidos e esperando na fila para cada caixa. No término da simulação deve ser 
+        /// informado o tempo médio dos clientes aguardando na fila.
         /// </summary>
         private static void Atividade3()
         {
@@ -254,7 +261,9 @@ namespace ERD2
 
         #region Atividade 4
         /// <summary>
-        /// 
+        /// Atividade 4: Sabendo que possuímos as pilhas (Pa, Pb, Pc) e os blocos (B1, B2, B3), implemente uma solução, através
+        /// de um simulador, utilizando apenas operações de pilha, para resultarmos na mesma composição e ordem dos blocos
+        /// (B1, B2, B3) na pilha Pb.
         /// </summary>
         private static void Atividade4()
         {
@@ -263,16 +272,22 @@ namespace ERD2
 
         #region Atividade 5
         /// <summary>
-        /// 
+        /// Atividade 5: Dada a sequência de números: 3 4 9 2 5 8 2 1 7 4 6 2 9 8 5 1, ordene-a em ordem crescente segundo os 
+        /// seguintes algoritmos, apresentando a sequência obtida após cada passo do algoritmo:
+        ///     a.InsertionSort
+        ///     b.SelectionSort
+        ///     c.ShellSort
+        ///     d. QuickSort
         /// </summary>
         private static void Atividade5()
         {
+            int[] sequenciaDeNumeros = { 3, 4, 9, 2, 5, 8, 2, 1, 7, 4, 6, 2, 9, 8, 5, 1 };
         }
         #endregion
 
         #region Atividade 6
         /// <summary>
-        /// 
+        /// Atividade 6: Inclua nos algoritmos acima (InsertionSort, SelectionSort, ShellSort e QuickSort) métodos que permitam a ordenação dos elementos também em ordem decrescente.
         /// </summary>
         private static void Atividade6()
         {
