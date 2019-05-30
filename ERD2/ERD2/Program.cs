@@ -265,6 +265,9 @@ namespace ERD2
         /// </summary>
         private static void Atividade3()
         {
+            //exemplo de aleatório
+            //Random rnd = new Random();
+            //int valorCombustivel = rnd.Next(4, 16);
         }
         #endregion
 
