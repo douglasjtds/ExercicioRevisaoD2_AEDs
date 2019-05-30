@@ -1,4 +1,5 @@
 ﻿using ERD2.Atividade_1;
+using ERD2.Atividade_2;
 using ERD2.TADs;
 using ERD2.TADs.Implementacoes;
 using System;
@@ -12,9 +13,8 @@ namespace ERD2
 {
     public class Program
     {
-        //private static Lista listaDeContatos;
         private static Fila filaDePacientes;
-
+        private static Lista listaDeContatos;
 
         static void Main(string[] args)
         {
@@ -168,8 +168,75 @@ namespace ERD2
         /// </summary>
         private static void Atividade2()
         {
+            listaDeContatos = new Lista(10);
 
+            #region Atividade 1 - [Escolha o que deseja executar]
+            int funcaoExecutada;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("------[Atividade 1]------");
+                Console.WriteLine("\n");
+                Console.WriteLine("[ 1 ] Cadastrar novo contato");
+                Console.WriteLine("[ 2 ] Imprimir todos os contatos");
+
+                Console.WriteLine("\n");
+
+                Console.WriteLine("[ 0 ] Sair do Programa");
+                Console.WriteLine("-------------------------------------");
+                Console.Write("Escolha o que deseja executar: ");
+                funcaoExecutada = Int32.Parse(Console.ReadLine());
+                switch (funcaoExecutada)
+                {
+                    case 1:
+                        IncluirNovoContato();
+                        break;
+
+                    case 2:
+                        ImprimirTodosOsContatos();
+                        break;
+
+                    default:
+                        SaiPrograma();
+                        break;
+                }
+
+            } while (funcaoExecutada != 0);
+            #endregion
         }
+
+        private static void IncluirNovoContato()
+        {
+            Console.Clear();
+            Console.Write("[Novo Contato]");
+            Console.WriteLine("\n");
+
+            var contato = new Contato();
+
+            Console.WriteLine("Entre com os dados do novo contato a ser adicionado na lista...");
+            Thread.Sleep(500);
+
+            Console.Write("Nome: ");
+            contato.Nome = Console.ReadLine();
+
+            Console.Write("Telefone: ");
+            contato.Telefone = Int32.Parse(Console.ReadLine());
+
+            Console.Write("E-mail: ");
+            contato.Email = Console.ReadLine();
+
+            listaDeContatos.Insere(contato);
+
+            Console.WriteLine("O contato {0} foi inserido com sucesso.", contato.Nome);
+        }
+
+        private static void ImprimirTodosOsContatos()
+        {
+            while (!listaDeContatos.IsListaVazia())
+                listaDeContatos.Imprime();
+        }
+
         #endregion
 
         #region Atividade 3

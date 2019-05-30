@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ERD2.TADs.Implementacoes
@@ -123,6 +124,8 @@ namespace ERD2.TADs.Implementacoes
         {
             for (int aux = this.primeiro; aux < this.ultimo; aux++)
                 Console.WriteLine(this.item[aux].ToString());
+
+            Thread.Sleep(1000);
         }
         #endregion
 

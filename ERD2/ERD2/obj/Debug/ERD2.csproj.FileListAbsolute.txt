@@ -12,3 +12,10 @@ C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\
 C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csproj.CoreCompileInputs.cache
 C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.exe
 C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.pdb
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.exe.config
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.exe
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.pdb
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csprojAssemblyReference.cache
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csproj.CoreCompileInputs.cache
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.exe
+D:\Users\douglasjtds\Desktop\FACULDADE\9º semestre kkj\Algorítimos e Estruturas de Dados\projetos\em .NET\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.pdb

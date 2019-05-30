@@ -13,7 +13,7 @@ namespace ERD2.TADs.Implementacoes
 
         private int frente, tras;
 
-        public Fila(int maxTam) //cria lista vazia
+        public Fila(int maxTam) //cria fila vazia
         {
             this.item = new Object[maxTam];
             this.frente = 0;
