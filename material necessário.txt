@@ -1,2 +1,8 @@
+Introdução
+http://www2.dcc.ufmg.br/livros/algoritmos-java/cap1/transp/completo1/cap1.pdf
+
 TADs
 http://www2.dcc.ufmg.br/livros/algoritmos-java/cap3/transp/completo1/cap3.pdf
+
+Ordenação
+http://www2.dcc.ufmg.br/livros/algoritmos-java/cap4/transp/completo1/cap4.pdf
