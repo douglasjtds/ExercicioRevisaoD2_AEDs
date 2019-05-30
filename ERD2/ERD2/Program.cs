@@ -16,6 +16,8 @@ namespace ERD2
         private static ListaEncadeada listaEncadeadaDePacientes;
         private static Lista listaDeContatos;
 
+        
+
         static void Main(string[] args)
         {
             #region [Escolha a Atividade que deseja executar]
@@ -81,6 +83,7 @@ namespace ERD2
         private static void Atividade1()
         {
             listaEncadeadaDePacientes = new ListaEncadeada();
+            //int contadorPaciente = 0;
 
             #region Atividade 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
@@ -108,7 +111,7 @@ namespace ERD2
                         break;
 
                     case 2:
-                        NovoCoracao_ConsultarProximoPaciente(listaEncadeadaDePacientes);
+                        NovoCoracao_ConsultarProximoPaciente();
                         break;
 
                     case 3:
@@ -133,6 +136,7 @@ namespace ERD2
             var paciente = new Paciente();
 
             Console.WriteLine("Entre com os dados do novo paciente a ser adicionado na fila de transplante...");
+            Console.WriteLine("\n");
             Thread.Sleep(500);
 
             Console.Write("Nome: ");
@@ -141,21 +145,20 @@ namespace ERD2
             Console.Write("Telefone: ");
             paciente.Telefone = Int32.Parse(Console.ReadLine());
 
-            Console.Write("Grau de Urgência: ");
+            Console.WriteLine("\nQual é o grau de urgência do paciente? \n(digite um valor de 1 a 5 onde 1 é " +
+                "'Sem Urgência' e 5 é 'Muito Urgente')");
             paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());
 
             listaEncadeadaDePacientes.Insere(paciente);
+            //contadorPaciente++;
 
             Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
         }
 
-        private static void NovoCoracao_ConsultarProximoPaciente(ListaEncadeada listaEncadeadaDePacientesRecebida)
+        private static void NovoCoracao_ConsultarProximoPaciente()
         {
-            //var pacienteComMaisUrgencia = listaEncadeadaDePacientesRecebida.Retira(x => x.)
-            //while (!listaEncadeadaDePacientesRecebida.IsListaVazia())
-            //    listaEncadeadaDePacientesRecebida.Retira(chave => Paciente.Equals));
-
             //------------- COMO PERCORRER ESSA LISTA CHAMANDO O RETIRA PRO ELEMENTO QUE TEM O MAIOR GrauDeUrgencia?????
+            listaEncadeadaDePacientes.Retira(listaEncadeadaDePacientes.GetPacienteMaiorGrauDeUrgencia());
         }
 
         private static void ConsultarTamanhoFilaDeEspera()

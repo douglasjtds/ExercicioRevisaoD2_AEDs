@@ -14,8 +14,6 @@ namespace ERD2.TADs.Implementacoes
         {
             internal Object item;
             internal Celula prox;
-            //internal object primeiro;
-            //internal Celula pos;
         }
         private Celula primeiro, ultimo, pos;
 
@@ -112,6 +110,26 @@ namespace ERD2.TADs.Implementacoes
                 Console.WriteLine(aux.item.ToString());
                 aux = aux.prox;
             }
+        }
+
+        public object GetPacienteMaiorGrauDeUrgencia()
+        {
+
+            while(this.ultimo != null)
+            {
+                //this.
+            }
+
+            return null;
+        }
+
+        public int ConsultaTamanhoLista()
+        {
+            //while(this.ultimo != null)
+            //{
+
+            //}
+            return 0;
         }
     }
 }
