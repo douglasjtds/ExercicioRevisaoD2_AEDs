@@ -44,5 +44,10 @@ namespace ERD2.TADs.Implementacoes
             return (this.frente == this.tras);
         }
         #endregion
+
+        public int TamanhoFila()
+        {
+            return this.tras;
+        }
     }
 }

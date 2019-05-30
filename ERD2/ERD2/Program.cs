@@ -3,6 +3,7 @@ using ERD2.Atividade_2;
 using ERD2.Atividade_4;
 using ERD2.TADs;
 using ERD2.TADs.Implementacoes;
+using ERD2.Ordenação.Implementacoes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,20 @@ namespace ERD2
         private static Lista listaDePacientes;
         private static Lista listaDeContatos;
 
+        //atividade 3
+        private static Fila Caixa1;
+        private static Fila Caixa2;
+        private static Fila Caixa3;
+        private static Fila Caixa4;
+        private static Fila Caixa5;
+
+        //atividade 4
         private static Pilha P1;
         private static Pilha P2;
         private static Pilha P3;
-        //private static Bloco bloco;
+
+        //atividade 5
+        private static Ordenacao ordenacao;
 
         static void Main(string[] args)
         {
@@ -268,6 +279,14 @@ namespace ERD2
             //exemplo de aleatório
             //Random rnd = new Random();
             //int valorCombustivel = rnd.Next(4, 16);
+
+            Caixa1 = new Fila(1000);
+            Caixa2 = new Fila(1000);
+            Caixa3 = new Fila(1000);
+            Caixa4 = new Fila(1000);
+            Caixa5 = new Fila(1000);
+
+            //continuar...
         }
         #endregion
 
@@ -279,7 +298,6 @@ namespace ERD2
         /// </summary>
         private static void Atividade4()
         {
-            listaDePacientes = new Lista(100);
             P1 = new Pilha(3);
             P2 = new Pilha(3);
             P3 = new Pilha(3);
@@ -293,12 +311,12 @@ namespace ERD2
             {
                 P3.Empilha(P1.Desempilha());
             }
-            
+
             for (int i = 1; i <= 3; i++)
             {
                 P2.Empilha(P3.Desempilha());
             }
-     
+
         }
         #endregion
 
@@ -314,6 +332,21 @@ namespace ERD2
         private static void Atividade5()
         {
             int[] sequenciaDeNumeros = { 3, 4, 9, 2, 5, 8, 2, 1, 7, 4, 6, 2, 9, 8, 5, 1 };
+
+            ordenacao = new Ordenacao();
+
+            ////     a. InsertionSort
+            //ordenacao.Insercao(sequenciaDeNumeros);
+
+            ////     b. SelectionSort
+            //ordenacao.Selecao(sequenciaDeNumeros);
+
+            ////     c. ShellSort
+            //ordenacao.Shellsort(sequenciaDeNumeros);
+
+            ////     d. QuickSort
+            //ordenacao.Quicksort(sequenciaDeNumeros);
+
         }
         #endregion
 
