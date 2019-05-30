@@ -1,5 +1,6 @@
 ﻿using ERD2.Atividade_1;
 using ERD2.Atividade_2;
+using ERD2.Atividade_4;
 using ERD2.TADs;
 using ERD2.TADs.Implementacoes;
 using System;
@@ -16,7 +17,10 @@ namespace ERD2
         private static Lista listaDePacientes;
         private static Lista listaDeContatos;
 
-        
+        private static Pilha P1;
+        private static Pilha P2;
+        private static Pilha P3;
+        private static Bloco bloco;
 
         static void Main(string[] args)
         {
@@ -272,6 +276,12 @@ namespace ERD2
         /// </summary>
         private static void Atividade4()
         {
+            listaDePacientes = new Lista(100);
+            P1 = new Pilha(3);
+            P2 = new Pilha(3);
+            P3 = new Pilha(3);
+
+            P1.Empilha(bloco);
         }
         #endregion
 

@@ -46,12 +46,15 @@
     <Compile Include="Atividade 1\GrauDeUrgencia.cs" />
     <Compile Include="Atividade 1\Paciente.cs" />
     <Compile Include="Atividade 2\Contato.cs" />
+    <Compile Include="Atividade 4\Bloco.cs" />
+    <Compile Include="Atividade 4\BlocoEnum.cs" />
     <Compile Include="Ordenação\Interfaces\IOrdenacao.cs" />
     <Compile Include="Ordenação\Interfaces\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TADs\Implementacoes\Fila.cs" />
     <Compile Include="TADs\Implementacoes\FilaEncadeada.cs" />
+    <Compile Include="TADs\Implementacoes\Pilha.cs" />
     <Compile Include="TADs\Interfaces\IFila.cs" />
     <Compile Include="TADs\Interfaces\IPilha.cs" />
     <Compile Include="TADs\Interfaces\IPilhaEncadeada.cs" />
