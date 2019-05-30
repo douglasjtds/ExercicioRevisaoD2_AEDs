@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERD2.Atividade_2
+namespace ERD2.Questao_2
 {
     public class Contato
     {

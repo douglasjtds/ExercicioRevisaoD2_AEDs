@@ -1,5 +1,5 @@
-﻿using ERD2.Atividade_1;
-using ERD2.Atividade_2;
+﻿using ERD2.Questao_1;
+using ERD2.Questao_2;
 using System;
 using System.Collections.Generic;
 using System.Linq;

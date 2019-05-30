@@ -1,5 +1,5 @@
-﻿using ERD2.Atividade_1;
-using ERD2.Atividade_2;
+﻿using ERD2.Questao_1;
+using ERD2.Questao_2;
 using ERD2.TADs.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -162,7 +162,7 @@ namespace ERD2.TADs.Implementacoes
 
 
         ////// deixando comentado apenas para referência
-        //#region [Atividade 3]
+        //#region [Questao 3]
         //public object RetiraUltimo()
         //{
         //    if (IsListaVazia())
@@ -216,9 +216,9 @@ namespace ERD2.TADs.Implementacoes
         //}
         //#endregion
 
-        //#region Aula Prática 4 - [Atividade 1]
+        //#region Aula Prática 4 - [Questao 1]
         ///// <summary>
-        ///// Atividade 1: Escreva uma função para trocar os elementos m e n de uma lista por arranjo 
+        ///// Questao 1: Escreva uma função para trocar os elementos m e n de uma lista por arranjo 
         ///// (onde m e n devem ser chaves dos itens a serem trocados na lista)
         ///// </summary>
         //public void TrocaElementosM_N(object chaveM, object chaveN)

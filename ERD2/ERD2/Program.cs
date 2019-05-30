@@ -1,6 +1,6 @@
-﻿using ERD2.Atividade_1;
-using ERD2.Atividade_2;
-using ERD2.Atividade_4;
+﻿using ERD2.Questao_1;
+using ERD2.Questao_2;
+using ERD2.Questao_4;
 using ERD2.TADs;
 using ERD2.TADs.Implementacoes;
 using ERD2.Ordenação.Implementacoes;
@@ -16,6 +16,7 @@ namespace ERD2
     public class Program
     {
         private static Lista listaDePacientes;
+
         private static Lista listaDeContatos;
 
         //atividade 3
@@ -35,59 +36,59 @@ namespace ERD2
 
         static void Main(string[] args)
         {
-            #region [Escolha a Atividade que deseja executar]
-            int numAtividade;
+            #region [Escolha a Questao que deseja executar]
+            int numQuestao;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("------[Exercício de Revisão 2 - Prova D2]------");
+                Console.WriteLine("------[Avaliação D2]------");
                 Console.WriteLine("\n");
-                Console.WriteLine("[ 1 ] Atividade 1");
-                Console.WriteLine("[ 2 ] Atividade 2");
-                Console.WriteLine("[ 3 ] Atividade 3");
-                Console.WriteLine("[ 4 ] Atividade 4");
-                Console.WriteLine("[ 5 ] Atividade 5");
-                Console.WriteLine("[ 6 ] Atividade 6");
+                Console.WriteLine("[ 1 ] Questão 1");
+                Console.WriteLine("[ 2 ] Questão 2");
+                Console.WriteLine("[ 3 ] Questão 3");
+                Console.WriteLine("[ 4 ] Questão 4");
+                Console.WriteLine("[ 5 ] Questão 5");
+                Console.WriteLine("[ 6 ] Questão 6");
 
                 Console.WriteLine("\n");
 
                 Console.WriteLine("[ 0 ] Sair do Programa");
                 Console.WriteLine("-------------------------------------");
-                Console.Write("Escolha a Atividade que deseja executar: ");
-                numAtividade = Int32.Parse(Console.ReadLine());
-                switch (numAtividade)
+                Console.Write("Escolha a Questão que deseja executar: ");
+                numQuestao = Int32.Parse(Console.ReadLine());
+                switch (numQuestao)
                 {
                     case 1:
-                        Atividade1();
+                        Questao1();
                         break;
                     case 2:
-                        Atividade2();
+                        Questao2();
                         break;
                     case 3:
-                        Atividade3();
+                        Questao3();
                         break;
                     case 4:
-                        Atividade4();
+                        Questao4();
                         break;
                     case 5:
-                        Atividade5();
+                        Questao5();
                         break;
                     case 6:
-                        Atividade6();
+                        Questao6();
                         break;
                     default:
                         SaiPrograma();
                         break;
                 }
 
-            } while (numAtividade != 0);
+            } while (numQuestao != 0);
             #endregion
         }
 
-        #region Atividade 1
+        #region Questao 1
         /// <summary>
-        /// Atividade 1: Um hospital de cardiologia precisa de um sistema para efetuar o cadastro de pacientes que necessitam
+        /// Questao 1: Um hospital de cardiologia precisa de um sistema para efetuar o cadastro de pacientes que necessitam
         /// de doação de coração. Para cada paciente que é incluído no sistema deve ser informado o nome, telefone e o grau de
         /// urgência para transplante. O grau de urgência é definido na seguinte escala: (5) Muito urgente; (4) Urgente; (3) Médio;
         /// (2) Pouco urgente; (1) Sem urgência. Sempre que é o hospital recebe um novo coração o sistema é consultado para
@@ -95,17 +96,17 @@ namespace ERD2
         /// qualquer momento é possível visualizar o tamanho da fila de espera. Observação: os dados não precisam ser
         /// persistidos em arquivos, podem ficar armazenados somente na memória.
         /// </summary>
-        private static void Atividade1()
+        private static void Questao1()
         {
             listaDePacientes = new Lista(100);
 
-            #region Atividade 1 - [Escolha o que deseja executar]
+            #region Questao 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("------[Atividade 1]------");
+                Console.WriteLine("------[Questao 1]------");
                 Console.WriteLine("\n");
                 Console.WriteLine("[ 1 ] Incluir novo paciente");
                 Console.WriteLine("[ 2 ] Novo coração recebido -> consultar próximo paciente para ser operado");
@@ -183,23 +184,23 @@ namespace ERD2
         }
         #endregion
 
-        #region Atividade 2
+        #region Questao 2
         /// <summary>
-        /// Atividade 2: Implemente um programa utilizando qualquer TAD para cadastrar os contatos de uma lista telefônica.
+        /// Questao 2: Implemente um programa utilizando qualquer TAD para cadastrar os contatos de uma lista telefônica.
         /// Para cada contato cadastrado, o programa deverá solicitar: nome, telefone e e-mail. O programa deve permitir
         /// imprimir todos os contatos cadastrados.
         /// </summary>
-        private static void Atividade2()
+        private static void Questao2()
         {
             listaDeContatos = new Lista(100);
 
-            #region Atividade 1 - [Escolha o que deseja executar]
+            #region Questao 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("------[Atividade 1]------");
+                Console.WriteLine("------[Questao 1]------");
                 Console.WriteLine("\n");
                 Console.WriteLine("[ 1 ] Cadastrar novo contato");
                 Console.WriteLine("[ 2 ] Imprimir todos os contatos");
@@ -263,9 +264,9 @@ namespace ERD2
 
         #endregion
 
-        #region Atividade 3
+        #region Questao 3
         /// <summary>
-        /// Atividade 3: Uma agência bancária estatal está sofrendo com o mau atendimento aos clientes. Suas filas são gigantescas! O gerente decidiu contratá-lo para que você 
+        /// Questao 3: Uma agência bancária estatal está sofrendo com o mau atendimento aos clientes. Suas filas são gigantescas! O gerente decidiu contratá-lo para que você 
         /// crie uma simulação do atendimento da agência e permita que ele faça experimentos para melhorar o atendimento.
         /// O gerente vai informar a quantidade de minutos que ele deseja executar a simulação. Na agência existem 5 caixas. A cada minuto chegam de 4 a 16 clientes.
         /// Cada caixa atende de 1 a 2 clientes por minuto. Sempre o cliente dá preferência para alguma caixa vazia ou para uma fila com menor número de clientes. 
@@ -274,7 +275,7 @@ namespace ERD2
         /// O programa deve informar, por minuto, a quantidade de clientes sendo atendidos e esperando na fila para cada caixa. No término da simulação deve ser 
         /// informado o tempo médio dos clientes aguardando na fila.
         /// </summary>
-        private static void Atividade3()
+        private static void Questao3()
         {
             //exemplo de aleatório
             //Random rnd = new Random();
@@ -290,13 +291,13 @@ namespace ERD2
         }
         #endregion
 
-        #region Atividade 4
+        #region Questao 4
         /// <summary>
-        /// Atividade 4: Sabendo que possuímos as pilhas (Pa, Pb, Pc) e os blocos (B1, B2, B3), implemente uma solução, através
+        /// Questao 4: Sabendo que possuímos as pilhas (Pa, Pb, Pc) e os blocos (B1, B2, B3), implemente uma solução, através
         /// de um simulador, utilizando apenas operações de pilha, para resultarmos na mesma composição e ordem dos blocos
         /// (B1, B2, B3) na pilha Pb.
         /// </summary>
-        private static void Atividade4()
+        private static void Questao4()
         {
             P1 = new Pilha(3);
             P2 = new Pilha(3);
@@ -320,16 +321,16 @@ namespace ERD2
         }
         #endregion
 
-        #region Atividade 5
+        #region Questao 5
         /// <summary>
-        /// Atividade 5: Dada a sequência de números: 3 4 9 2 5 8 2 1 7 4 6 2 9 8 5 1, ordene-a em ordem crescente segundo os 
+        /// Questao 5: Dada a sequência de números: 3 4 9 2 5 8 2 1 7 4 6 2 9 8 5 1, ordene-a em ordem crescente segundo os 
         /// seguintes algoritmos, apresentando a sequência obtida após cada passo do algoritmo:
         ///     a. InsertionSort
         ///     b. SelectionSort
         ///     c. ShellSort
         ///     d. QuickSort
         /// </summary>
-        private static void Atividade5()
+        private static void Questao5()
         {
             int[] sequenciaDeNumeros = { 3, 4, 9, 2, 5, 8, 2, 1, 7, 4, 6, 2, 9, 8, 5, 1 };
 
@@ -350,11 +351,11 @@ namespace ERD2
         }
         #endregion
 
-        #region Atividade 6
+        #region Questao 6
         /// <summary>
-        /// Atividade 6: Inclua nos algoritmos acima (InsertionSort, SelectionSort, ShellSort e QuickSort) métodos que permitam a ordenação dos elementos também em ordem decrescente.
+        /// Questao 6: Inclua nos algoritmos acima (InsertionSort, SelectionSort, ShellSort e QuickSort) métodos que permitam a ordenação dos elementos também em ordem decrescente.
         /// </summary>
-        private static void Atividade6()
+        private static void Questao6()
         {
         }
         #endregion

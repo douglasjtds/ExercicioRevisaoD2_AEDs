@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERD2.Atividade_4
+namespace ERD2.Questao_4
 {
     public class Bloco
     {
