@@ -13,7 +13,7 @@ namespace ERD2
 {
     public class Program
     {
-        private static Fila filaDePacientes;
+        private static ListaEncadeada listaEncadeadaDePacientes;
         private static Lista listaDeContatos;
 
         static void Main(string[] args)
@@ -80,7 +80,7 @@ namespace ERD2
         /// </summary>
         private static void Atividade1()
         {
-            filaDePacientes = new Fila(10);
+            listaEncadeadaDePacientes = new ListaEncadeada();
 
             #region Atividade 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
@@ -144,14 +144,18 @@ namespace ERD2
             Console.Write("Grau de Urgência: ");
             paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());
 
-            filaDePacientes.Enfileira(paciente);
+            listaEncadeadaDePacientes.Insere(paciente);
 
             Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
         }
 
-        private static void NovoCoracao_ConsultarProximoPaciente()
+        private static void NovoCoracao_ConsultarProximoPaciente(ListaEncadeada listaEncadeadaDePacientesRecebida)
         {
-            throw new NotImplementedException();
+            //var pacienteComMaisUrgencia = listaEncadeadaDePacientesRecebida.Retira(x => x.)
+            //while (!listaEncadeadaDePacientesRecebida.IsListaVazia())
+            //    listaEncadeadaDePacientesRecebida.
+
+            //------------- COMO PERCORRER ESSA LISTA CHAMANDO O RETIRA PRO ELEMENTO QUE TEM O MAIOR GrauDeUrgencia?????
         }
 
         private static void ConsultarTamanhoFilaDeEspera()

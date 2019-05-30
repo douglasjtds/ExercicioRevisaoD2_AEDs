@@ -1,4 +1,5 @@
-﻿using ERD2.TADs.Interfaces;
+﻿using ERD2.Atividade_2;
+using ERD2.TADs.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,8 +71,8 @@ namespace ERD2.TADs.Implementacoes
                 throw new Exception("Erro : A lista esta vazia");
 
             int p = 0;
-            //while (p < ultimo && !((Contato)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
-            while(p < this.ultimo && !this.item[p].Equals(chave)) // ----- Implementação da forma que foi feita no livro
+            //while(p < this.ultimo && !this.item[p].Equals(chave)) // ----- Implementação da forma que foi feita no livro
+            while (p < ultimo && !((Contato)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
                 p++;
 
             if (p >= this.ultimo)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ERD2.Atividade_2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,9 +57,9 @@ namespace ERD2.TADs.Implementacoes
             if (this.IsListaVazia() || (chave == null))
                 throw new Exception("Erro : Lista vazia ou chave invalida");
             Celula aux = this.primeiro;
-            //while (aux.prox != null && !((Contato)(aux.prox.item)).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
-            while (aux.prox != null && !aux.prox.item.Equals(chave))
-                aux = aux.prox;
+            //while (aux.prox != null && !aux.prox.item.Equals(chave)) // ----- Implementação da forma que foi feita no livro
+                while (aux.prox != null && !((Contato)(aux.prox.item)).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
+                    aux = aux.prox;
             if (aux.prox == null)
                 return null; // não encontrada
             Celula q = aux.prox;
