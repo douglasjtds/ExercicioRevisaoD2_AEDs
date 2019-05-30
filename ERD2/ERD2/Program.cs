@@ -87,7 +87,6 @@ namespace ERD2
         private static void Atividade1()
         {
             listaDePacientes = new Lista(100);
-            //int contadorPaciente = 0;
 
             #region Atividade 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
@@ -154,7 +153,6 @@ namespace ERD2
             paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());
 
             listaDePacientes.Insere(paciente);
-            //contadorPaciente++;
 
             Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
         }
@@ -291,9 +289,9 @@ namespace ERD2
         /// <summary>
         /// Atividade 5: Dada a sequência de números: 3 4 9 2 5 8 2 1 7 4 6 2 9 8 5 1, ordene-a em ordem crescente segundo os 
         /// seguintes algoritmos, apresentando a sequência obtida após cada passo do algoritmo:
-        ///     a.InsertionSort
-        ///     b.SelectionSort
-        ///     c.ShellSort
+        ///     a. InsertionSort
+        ///     b. SelectionSort
+        ///     c. ShellSort
         ///     d. QuickSort
         /// </summary>
         private static void Atividade5()
