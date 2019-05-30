@@ -128,7 +128,34 @@ namespace ERD2.TADs.Implementacoes
 
             Thread.Sleep(1000);
         }
+
+        public int tamanhoLista()
+        {
+            return this.ultimo;
+        }
         #endregion
+
+        public object GetPacienteMaiorGrauDeUrgencia()
+        {
+            //percorrer a instancia de lista recebida pra verificar o que tem maior grau de urgencia
+            //Celula aux = this.primeiro.prox;
+            //while (aux != null)
+            //{
+
+            //}
+
+            //while(this.ultimo != null)
+            //{
+            //    //this.
+            //}
+
+            return null;
+        }
+
+        //public int tamanhoLista()
+        //{
+        //    return this.ultimo;
+        //}
 
 
 

@@ -13,7 +13,7 @@ namespace ERD2
 {
     public class Program
     {
-        private static ListaEncadeada listaEncadeadaDePacientes;
+        private static Lista listaDePacientes;
         private static Lista listaDeContatos;
 
         
@@ -76,13 +76,13 @@ namespace ERD2
         /// de doação de coração. Para cada paciente que é incluído no sistema deve ser informado o nome, telefone e o grau de
         /// urgência para transplante. O grau de urgência é definido na seguinte escala: (5) Muito urgente; (4) Urgente; (3) Médio;
         /// (2) Pouco urgente; (1) Sem urgência. Sempre que é o hospital recebe um novo coração o sistema é consultado para
-        /// obter o próximo paciente que deverá ser operado. O sistema informa o nome e o telefone do paciente.Também a
+        /// obter o próximo paciente que deverá ser operado. O sistema informa o nome e o telefone do paciente. Também a
         /// qualquer momento é possível visualizar o tamanho da fila de espera. Observação: os dados não precisam ser
         /// persistidos em arquivos, podem ficar armazenados somente na memória.
         /// </summary>
         private static void Atividade1()
         {
-            listaEncadeadaDePacientes = new ListaEncadeada();
+            listaDePacientes = new Lista(100);
             //int contadorPaciente = 0;
 
             #region Atividade 1 - [Escolha o que deseja executar]
@@ -149,7 +149,7 @@ namespace ERD2
                 "'Sem Urgência' e 5 é 'Muito Urgente')");
             paciente.GrauDeUrgencia = (GrauDeUrgencia)Int32.Parse(Console.ReadLine());
 
-            listaEncadeadaDePacientes.Insere(paciente);
+            listaDePacientes.Insere(paciente);
             //contadorPaciente++;
 
             Console.WriteLine("O paciente {0} foi inserido com sucesso.", paciente.Nome);
@@ -158,12 +158,13 @@ namespace ERD2
         private static void NovoCoracao_ConsultarProximoPaciente()
         {
             //------------- COMO PERCORRER ESSA LISTA CHAMANDO O RETIRA PRO ELEMENTO QUE TEM O MAIOR GrauDeUrgencia?????
-            listaEncadeadaDePacientes.Retira(listaEncadeadaDePacientes.GetPacienteMaiorGrauDeUrgencia());
+            listaDePacientes.Retira(listaDePacientes.GetPacienteMaiorGrauDeUrgencia());
         }
 
         private static void ConsultarTamanhoFilaDeEspera()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("O tamanho atual da lista de espera de pacientes é: {0}", listaDePacientes.tamanhoLista());
+            Thread.Sleep(3000);
         }
         #endregion
 
@@ -175,7 +176,7 @@ namespace ERD2
         /// </summary>
         private static void Atividade2()
         {
-            listaDeContatos = new Lista(10);
+            listaDeContatos = new Lista(100);
 
             #region Atividade 1 - [Escolha o que deseja executar]
             int funcaoExecutada;
@@ -240,6 +241,7 @@ namespace ERD2
 
         private static void ImprimirTodosOsContatos()
         {
+            //-----NÃO TÁ IMPRIMINDO CERTO
             while (!listaDeContatos.IsListaVazia())
                 listaDeContatos.Imprime();
         }

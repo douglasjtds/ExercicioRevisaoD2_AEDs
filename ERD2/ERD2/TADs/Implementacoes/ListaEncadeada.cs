@@ -112,24 +112,35 @@ namespace ERD2.TADs.Implementacoes
             }
         }
 
-        public object GetPacienteMaiorGrauDeUrgencia()
-        {
+        //public object GetPacienteMaiorGrauDeUrgencia()
+        //{
+        //    //percorrer a instancia de lista recebida pra verificar o que tem maior grau de urgencia
+        //    Celula aux = this.primeiro.prox;
+        //    while(aux != null)
+        //    {
 
-            while(this.ultimo != null)
-            {
-                //this.
-            }
+        //    }
 
-            return null;
-        }
+        //    //while(this.ultimo != null)
+        //    //{
+        //    //    //this.
+        //    //}
 
-        public int ConsultaTamanhoLista()
-        {
-            //while(this.ultimo != null)
-            //{
+        //    return null;
+        ////}
 
-            //}
-            return 0;
-        }
+        //public int ConsultaTamanhoLista()
+        //{
+        //    //while(this.ultimo != null)
+        //    //{
+
+        //    //}
+        //    return 0;
+        //}
+
+        //public int tamanhoLista()
+        //{
+        //    return this.ultimo;
+        //}
     }
 }
