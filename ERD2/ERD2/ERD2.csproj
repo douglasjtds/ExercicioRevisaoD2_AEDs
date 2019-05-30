@@ -48,6 +48,9 @@
     <Compile Include="Atividade 2\Contato.cs" />
     <Compile Include="Atividade 4\Bloco.cs" />
     <Compile Include="Atividade 4\BlocoEnum.cs" />
+    <Compile Include="Ordenação\Implementacoes\FPHeapMax.cs" />
+    <Compile Include="Ordenação\Implementacoes\MeuItem.cs" />
+    <Compile Include="Ordenação\Implementacoes\Ordenacao.cs" />
     <Compile Include="Ordenação\Interfaces\IOrdenacao.cs" />
     <Compile Include="Ordenação\Interfaces\Item.cs" />
     <Compile Include="Program.cs" />
