@@ -20,7 +20,7 @@ namespace ERD2
         private static Pilha P1;
         private static Pilha P2;
         private static Pilha P3;
-        private static Bloco bloco;
+        //private static Bloco bloco;
 
         static void Main(string[] args)
         {
@@ -281,7 +281,21 @@ namespace ERD2
             P2 = new Pilha(3);
             P3 = new Pilha(3);
 
-            P1.Empilha(bloco);
+            for (int i = 1; i <= 3; i++)
+            {
+                P1.Empilha(i);
+            }
+
+            for (int i = 1; i <= 3; i++)
+            {
+                P3.Empilha(P1.Desempilha());
+            }
+            
+            for (int i = 1; i <= 3; i++)
+            {
+                P2.Empilha(P3.Desempilha());
+            }
+     
         }
         #endregion
 
