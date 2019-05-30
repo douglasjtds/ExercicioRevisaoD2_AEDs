@@ -161,8 +161,10 @@ namespace ERD2
 
         private static void NovoCoracao_ConsultarProximoPaciente()
         {
-            //------------- COMO PERCORRER ESSA LISTA CHAMANDO O RETIRA PRO ELEMENTO QUE TEM O MAIOR GrauDeUrgencia?????
-            listaDePacientes.Retira(listaDePacientes.GetPacienteMaiorGrauDeUrgencia());
+            var paciente = (Paciente)listaDePacientes.GetPacienteMaiorGrauDeUrgencia();
+
+            Console.WriteLine("O paciente {0} foi transplantado com sucesso. =)", paciente.Nome);
+            listaDePacientes.Retira(paciente);
         }
 
         private static void ConsultarTamanhoFilaDeEspera()

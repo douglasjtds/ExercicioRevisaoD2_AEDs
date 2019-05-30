@@ -1,4 +1,5 @@
-﻿using ERD2.Atividade_2;
+﻿using ERD2.Atividade_1;
+using ERD2.Atividade_2;
 using ERD2.TADs.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -72,7 +73,7 @@ namespace ERD2.TADs.Implementacoes
 
             int p = 0;
             //while(p < this.ultimo && !this.item[p].Equals(chave)) // ----- Implementação da forma que foi feita no livro
-            while (p < ultimo && !((Contato)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
+            while (p < ultimo && !((Paciente)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
                 p++;
 
             if (p >= this.ultimo)
@@ -137,19 +138,20 @@ namespace ERD2.TADs.Implementacoes
 
         public object GetPacienteMaiorGrauDeUrgencia()
         {
-            //percorrer a instancia de lista recebida pra verificar o que tem maior grau de urgencia
-            //Celula aux = this.primeiro.prox;
-            //while (aux != null)
-            //{
+            int p = 0;
+            Paciente pacienteSelecionado = null;
 
-            //}
+            while (p < ultimo)
+            {
+                var paciente = (Paciente)item[p];
 
-            //while(this.ultimo != null)
-            //{
-            //    //this.
-            //}
+                if (pacienteSelecionado == null || pacienteSelecionado.GrauDeUrgencia < paciente.GrauDeUrgencia)
+                    pacienteSelecionado = paciente;
 
-            return null;
+                p++;
+            }
+
+            return pacienteSelecionado;
         }
 
         //public int tamanhoLista()
