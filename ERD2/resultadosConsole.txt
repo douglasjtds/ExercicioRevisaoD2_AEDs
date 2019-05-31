@@ -1,0 +1,143 @@
+------------ RESULTADOS DO CONSOLE ------------
+
+------[Avaliação D2]------
+
+
+[ 1 ] Questão 1
+[ 2 ] Questão 2
+[ 3 ] Questão 3
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha a Questão que deseja executar: 1
+
+
+
+
+------[Questão 1]------
+
+
+[ 1 ] Cadastrar novo contato
+[ 2 ] Imprimir todos os contatos
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 1
+
+
+
+
+[Novo Contato]
+
+Entre com os dados do novo contato a ser adicionado na lista...
+Nome: Douglas Tertuliano
+Telefone: 123
+E-mail: douglasjtds@gmail.com
+
+
+------[Questão 1]------
+
+
+[ 1 ] Cadastrar novo contato
+[ 2 ] Imprimir todos os contatos
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 1
+
+
+[Novo Contato]
+
+Entre com os dados do novo contato a ser adicionado na lista...
+Nome: contatoTeste
+Telefone: 321
+E-mail: teste@teste.com.br
+
+
+
+------[Questão 1]------
+
+
+[ 1 ] Cadastrar novo contato
+[ 2 ] Imprimir todos os contatos
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 2
+
+
+ERD2.Questao_1.Contato
+ERD2.Questao_1.Contato
+
+
+------[Avaliação D2]------
+
+
+[ 1 ] Questão 1
+[ 2 ] Questão 2
+[ 3 ] Questão 3
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha a Questão que deseja executar: 2
+
+
+
+------[Questão 2]------
+
+
+[ 1 ] Adicionar carro no estacionamento
+[ 2 ] Retirar carro do estacionamento
+[ 3 ] Ver o estado do estacionamento
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 1
+
+[Novo Carro]
+
+Entre com os dados do novo carro a ser adicionado na fila...
+Insira a placa do novo carro: KKK-1234
+
+
+------[Questão 2]------
+
+
+[ 1 ] Adicionar carro no estacionamento
+[ 2 ] Retirar carro do estacionamento
+[ 3 ] Ver o estado do estacionamento
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 1
+
+[Novo Carro]
+
+Entre com os dados do novo carro a ser adicionado na fila...
+Insira a placa do novo carro: AED-4321
+
+
+------[Questão 2]------
+
+
+[ 1 ] Adicionar carro no estacionamento
+[ 2 ] Retirar carro do estacionamento
+[ 3 ] Ver o estado do estacionamento
+
+
+[ 0 ] Sair do Programa
+-------------------------------------
+Escolha o que deseja executar: 2
+
+[Remover um carro do estacionamento]
+
+O carro de placa KKK-1234 foi removido do estacionamento.
+
+

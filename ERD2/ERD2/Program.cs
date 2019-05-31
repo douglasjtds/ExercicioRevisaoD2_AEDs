@@ -138,8 +138,11 @@ namespace ERD2
 
         private static void ImprimirTodosOsContatos()
         {
+            Console.WriteLine("\n");
+
             //while (!listaDeContatos.IsListaVazia())
             listaDeContatos.Imprime();
+            Thread.Sleep(3000);
         }
 
         #endregion
@@ -223,7 +226,7 @@ namespace ERD2
             Console.Clear();
             Console.Write("[Remover um carro do estacionamento]");
             Console.WriteLine("\n");
-            
+
             var carroRetirado = (Carro)estacionamento.Desenfileira();
 
             Console.WriteLine("O carro de placa {0} foi removido do estacionamento.", carroRetirado.Placa);
@@ -234,18 +237,15 @@ namespace ERD2
 
         #region Questao 3
         /// <summary>
-        /// Questao 3: Uma agência bancária estatal está sofrendo com o mau atendimento aos clientes. Suas filas são gigantescas! O gerente decidiu contratá-lo para que você 
-        /// crie uma simulação do atendimento da agência e permita que ele faça experimentos para melhorar o atendimento.
-        /// O gerente vai informar a quantidade de minutos que ele deseja executar a simulação. Na agência existem 5 caixas. A cada minuto chegam de 4 a 16 clientes.
-        /// Cada caixa atende de 1 a 2 clientes por minuto. Sempre o cliente dá preferência para alguma caixa vazia ou para uma fila com menor número de clientes. 
-        /// Para cada cliente que entra na fila deve-se registrar o momento (tempo) que ele entrou na fila. Quando o cliente for atendido deve-se computar a 
-        /// diferença entre o tempo atual e o tempo de entrada na fila. Este dado vai servir para calcular o tempo médio dos clientes na fila.
-        /// O programa deve informar, por minuto, a quantidade de clientes sendo atendidos e esperando na fila para cada caixa. No término da simulação deve ser 
-        /// informado o tempo médio dos clientes aguardando na fila.
+        /// Questao 3 (7,5 pontos): mediacdns3.ulife.com.br/PAT/Upload/1907417/Avaliacao2_20190530162128.pdf
         /// </summary>
         private static void Questao3()
         {
-            
+            //int[] vetor10 = { 100, __, 65, __, __, __, __, 6, __, 89 };
+            //int[] vetor20 = { 16, __, 73, __, 98, __, 14, __, 27, __, 67, __, 40, __, 1, __, 85, __, 9, __ };
+
+            int[] vetor10 = { 100, 65, 6, 89 };
+            int[] vetor20 = { 16, 73, 98, 14, 27, 67, 40, 1, 85, 9 };
         }
         #endregion
 
