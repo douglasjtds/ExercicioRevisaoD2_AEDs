@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERD2.Questao_4
+namespace ERD2.Questao_2
 {
-    public enum BlocoEnum
+    public class Carro
     {
-        b1 = 1,
-        b2 = 2,
-        b3 = 3
+        public string Placa { get; set; }
     }
 }

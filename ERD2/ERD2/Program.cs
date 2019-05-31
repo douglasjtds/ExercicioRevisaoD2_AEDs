@@ -1,6 +1,4 @@
 ﻿using ERD2.Questao_1;
-//using ERD2.Questao_2;
-using ERD2.Questao_4;
 using ERD2.TADs;
 using ERD2.TADs.Implementacoes;
 using ERD2.Ordenação.Implementacoes;
@@ -10,29 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using ERD2.Questao_2;
 
 namespace ERD2
 {
     public class Program
     {
-        //private static Lista listaDePacientes;
 
+        //Questão 1
         private static Lista listaDeContatos;
 
-        //atividade 3
-        private static Fila Caixa1;
-        private static Fila Caixa2;
-        private static Fila Caixa3;
-        private static Fila Caixa4;
-        private static Fila Caixa5;
+        //Questão 2
+        private static Fila estacionamento;
 
-        //atividade 4
-        private static Pilha P1;
-        private static Pilha P2;
-        private static Pilha P3;
+        //Questão 3
 
-        //atividade 5
-        private static Ordenacao ordenacao;
 
         static void Main(string[] args)
         {
@@ -156,13 +146,89 @@ namespace ERD2
 
         #region Questao 2
         /// <summary>
-        /// Questao 2: 
+        /// Questao 2: (7,5 pontos): Manoel percebeu que seu estacionamento com uma entrada era um fiasco. 
+        /// Ele resolveu vender o seu terreno e comprar um novo que possui uma entrada e uma saída no fundo do terreno.
+        /// Quando chega um novo carro, este é estacionado no terreno de Manoel, um atrás do outro. Quando um carro 
+        /// precisa sair, os carros do terreno são retirados pela saída, dão uma volta na quadra e são colocados no 
+        /// final da fila pela entrada do estacionamento. Faça um sistema que inclua carros no estacionamento 
+        /// informando o número da placa e retire carros usando o identificador(placa). Depois de ter informado a         /// placa, cada vez que é pressionada a tecla S deve ser mostrado o estado do estacionamento.
         /// </summary>
         private static void Questao2()
         {
+            estacionamento = new Fila(100);
 
+            #region Questão 2 - [Escolha o que deseja executar]
+            int funcaoExecutada;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("------[Questão 2]------");
+                Console.WriteLine("\n");
+                Console.WriteLine("[ 1 ] Adicionar carro no estacionamento");
+                Console.WriteLine("[ 2 ] Retirar carro do estacionamento");
+                Console.WriteLine("[ 3 ] Ver o estado do estacionamento");
+
+                Console.WriteLine("\n");
+
+                Console.WriteLine("[ 0 ] Sair do Programa");
+                Console.WriteLine("-------------------------------------");
+                Console.Write("Escolha o que deseja executar: ");
+                funcaoExecutada = Int32.Parse(Console.ReadLine());
+                switch (funcaoExecutada)
+                {
+                    case 1:
+                        IncluirNovoCarro();
+                        break;
+
+                    case 2:
+                        RetirarCarroDoEstacionamento();
+                        break;
+
+                    case 3:
+                        //VerEstadoDoEstacionamento();
+                        break;
+
+                    default:
+                        SaiPrograma();
+                        break;
+                }
+
+            } while (funcaoExecutada != 0);
+            #endregion
         }
 
+        private static void IncluirNovoCarro()
+        {
+            Console.Clear();
+            Console.Write("[Novo Carro]");
+            Console.WriteLine("\n");
+
+            var carro = new Carro();
+
+            Console.WriteLine("Entre com os dados do novo carro a ser adicionado na fila...");
+            Thread.Sleep(500);
+
+            Console.Write("Insira a placa do novo carro: ");
+            carro.Placa = Console.ReadLine();
+
+
+            estacionamento.Enfileira(carro);
+
+            Console.WriteLine("O carro de placa {0} foi inserido no estacionamento.", carro.Placa);
+        }
+
+        private static void RetirarCarroDoEstacionamento()
+        {
+            Console.Clear();
+            Console.Write("[Remover um carro do estacionamento]");
+            Console.WriteLine("\n");
+            
+            var carroRetirado = (Carro)estacionamento.Desenfileira();
+
+            Console.WriteLine("O carro de placa {0} foi removido do estacionamento.", carroRetirado.Placa);
+            Thread.Sleep(3000);
+        }
 
         #endregion
 
@@ -179,17 +245,7 @@ namespace ERD2
         /// </summary>
         private static void Questao3()
         {
-            //exemplo de aleatório
-            //Random rnd = new Random();
-            //int valorCombustivel = rnd.Next(4, 16);
-
-            Caixa1 = new Fila(1000);
-            Caixa2 = new Fila(1000);
-            Caixa3 = new Fila(1000);
-            Caixa4 = new Fila(1000);
-            Caixa5 = new Fila(1000);
-
-            //continuar...
+            
         }
         #endregion
 

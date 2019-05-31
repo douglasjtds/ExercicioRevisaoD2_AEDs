@@ -72,7 +72,7 @@ namespace ERD2.TADs.Implementacoes
 
             int p = 0;
             //while(p < this.ultimo && !this.item[p].Equals(chave)) // ----- Implementação da forma que foi feita no livro
-            while (p < ultimo && !((Paciente)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
+            while (p < ultimo && !((Contato)(this.item[p])).Nome.Equals(chave)) // ----- Implementação com o cast para contato para conseguir pesquisar pelo nome
                 p++;
 
             if (p >= this.ultimo)
@@ -135,23 +135,23 @@ namespace ERD2.TADs.Implementacoes
         }
         #endregion
 
-        public object GetPacienteMaiorGrauDeUrgencia()
-        {
-            int p = 0;
-            Paciente pacienteSelecionado = null;
+        //public object GetPacienteMaiorGrauDeUrgencia()
+        //{
+        //    int p = 0;
+        //    Paciente pacienteSelecionado = null;
 
-            while (p < ultimo)
-            {
-                var paciente = (Paciente)item[p];
+        //    while (p < ultimo)
+        //    {
+        //        var paciente = (Paciente)item[p];
 
-                if (pacienteSelecionado == null || pacienteSelecionado.GrauDeUrgencia < paciente.GrauDeUrgencia)
-                    pacienteSelecionado = paciente;
+        //        if (pacienteSelecionado == null || pacienteSelecionado.GrauDeUrgencia < paciente.GrauDeUrgencia)
+        //            pacienteSelecionado = paciente;
 
-                p++;
-            }
+        //        p++;
+        //    }
 
-            return pacienteSelecionado;
-        }
+        //    return pacienteSelecionado;
+        //}
 
         //public int tamanhoLista()
         //{
