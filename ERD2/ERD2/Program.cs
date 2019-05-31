@@ -14,6 +14,8 @@ namespace ERD2
 {
     public class Program
     {
+        //Enunciado em: mediacdns3.ulife.com.br/PAT/Upload/1907417/Avaliacao2_20190530162128.pdf
+
 
         //Questão 1
         private static Lista listaDeContatos;
@@ -237,12 +239,21 @@ namespace ERD2
 
         #region Questao 3
         /// <summary>
-        /// Questao 3 (7,5 pontos): mediacdns3.ulife.com.br/PAT/Upload/1907417/Avaliacao2_20190530162128.pdf
+        /// Questao 3 (7,5 pontos): Complete as sequencias de vetores a seguir com números aleatórios e diferentes, escolhidos por você: 
+        /// int[] vetor10 = { 100, __, 65, __, __, __, __, 6, __, 89 };
+        /// int[] vetor20 = { 16, __, 73, __, 98, __, 14, __, 27, __, 67, __, 40, __, 1, __, 85, __, 9, __ };
+        /// Execute o exemplo que implementa os algoritmos de InsertionSort, SelectionSort, ShellSort e QuickSort
+        /// (disponibilizados no Ulife), para cada vetor construído acima, ordenados de forma crescente.Apresente
+        /// todos os resultados dos passos executados para cada algoritmo em cada tamanho de vetor.
+        /// Obs.: O que deve ser entregue:
+        /// - o vetor10 preenchido completamente no método main() do programa;
+        /// - o vetor20 preenchido completamente no método main() do programa;
+        /// - os resultados dos passos executados para cada vetor em cada algoritmo(InsertionSort, SelectionSort,
+        /// ShellSort e QuickSort)
         /// </summary>
         private static void Questao3()
         {
-            //int[] vetor10 = { 100, __, 65, __, __, __, __, 6, __, 89 };
-            //int[] vetor20 = { 16, __, 73, __, 98, __, 14, __, 27, __, 67, __, 40, __, 1, __, 85, __, 9, __ };
+            
 
             int[] vetor10 = { 100, 65, 6, 89 };
             int[] vetor20 = { 16, 73, 98, 14, 27, 67, 40, 1, 85, 9 };
