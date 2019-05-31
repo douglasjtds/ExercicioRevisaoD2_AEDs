@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Atividade 1\GrauDeUrgencia.cs" />
     <Compile Include="Atividade 1\Paciente.cs" />
-    <Compile Include="Atividade 2\Contato.cs" />
     <Compile Include="Atividade 4\Bloco.cs" />
     <Compile Include="Atividade 4\BlocoEnum.cs" />
     <Compile Include="Ordenação\Implementacoes\FPHeapMax.cs" />
@@ -55,6 +54,7 @@
     <Compile Include="Ordenação\Interfaces\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questao 1\Contato.cs" />
     <Compile Include="TADs\Implementacoes\Fila.cs" />
     <Compile Include="TADs\Implementacoes\FilaEncadeada.cs" />
     <Compile Include="TADs\Implementacoes\Pilha.cs" />

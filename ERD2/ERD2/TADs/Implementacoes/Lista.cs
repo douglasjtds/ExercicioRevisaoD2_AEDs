@@ -1,5 +1,4 @@
 ﻿using ERD2.Questao_1;
-using ERD2.Questao_2;
 using ERD2.TADs.Interfaces;
 using System;
 using System.Collections.Generic;
