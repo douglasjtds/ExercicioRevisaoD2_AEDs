@@ -5,3 +5,10 @@ C:\Users\Douglas Tertuliano\Documents\Projects\ExercicioRevisaoD2_AEDs\ERD2\ERD2
 C:\Users\Douglas Tertuliano\Documents\Projects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csproj.CoreCompileInputs.cache
 C:\Users\Douglas Tertuliano\Documents\Projects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.exe
 C:\Users\Douglas Tertuliano\Documents\Projects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.pdb
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csprojAssemblyReference.cache
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.csproj.CoreCompileInputs.cache
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.exe
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\obj\Debug\ERD2.pdb
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.exe.config
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.exe
+C:\Users\OTC91020\Documents\someOtherProjects\ExercicioRevisaoD2_AEDs\ERD2\ERD2\bin\Debug\ERD2.pdb

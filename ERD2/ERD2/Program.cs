@@ -250,13 +250,55 @@ namespace ERD2
         /// - o vetor20 preenchido completamente no método main() do programa;
         /// - os resultados dos passos executados para cada vetor em cada algoritmo(InsertionSort, SelectionSort,
         /// ShellSort e QuickSort)
+        /// <para>Comentar e descomentar o bloco de código de acordo com o método de ordenação que será utilizado</para>
         /// </summary>
         private static void Questao3()
         {
-            
+            int[] vetor10 = { 100, 12, 65, 10, 70, 1, 3, 6, 51, 89 };
+            int[] vetor20 = { 16, 4, 73, 42, 98, 3, 14, 32, 27, 2, 67, 84, 40, 56, 1, 12, 85, 100, 9, 99 };
 
-            int[] vetor10 = { 100, 65, 6, 89 };
-            int[] vetor20 = { 16, 73, 98, 14, 27, 67, 40, 1, 85, 9 };
+            Ordenacao ordenacao = new Ordenacao();
+
+            //InsertionSort
+            Console.WriteLine("Vetor 10: ");
+            ordenacao.Insercao(vetor10);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Vetor 20: ");
+            ordenacao.Insercao(vetor20);
+
+            ////SelectionSort
+            //Console.WriteLine("Vetor 10: ");
+            //ordenacao.Selecao(vetor10);
+
+            //Console.WriteLine("\n");
+
+            //Console.WriteLine("Vetor 20: ");
+            //ordenacao.Selecao(vetor20);
+
+            ////ShellSort
+            //Console.WriteLine("Vetor 10: ");
+            //ordenacao.Shellsort(vetor10);
+            //Console.WriteLine("\n");
+
+            //Console.WriteLine("Vetor 20: ");
+            //ordenacao.Shellsort(vetor20);
+
+
+            ////QuickSort
+            //int tamanhoVetor10 = 10;
+            //int tamanhoVetor20 = 20;
+            //Quicksort quicksort = new Quicksort();
+            //Console.WriteLine("Vetor 10: ");
+            //quicksort.Ordena(vetor10, 0, tamanhoVetor10 - 1);
+            //quicksort.Imprimir(vetor10);
+
+            //Console.WriteLine("\n");
+
+            //Console.WriteLine("Vetor 20: ");
+            //quicksort.Ordena(vetor20, 0, tamanhoVetor20 - 1);
+            //quicksort.Imprimir(vetor20);
+
         }
         #endregion
 

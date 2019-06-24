@@ -46,6 +46,7 @@
     <Compile Include="Ordenação\Implementacoes\FPHeapMax.cs" />
     <Compile Include="Ordenação\Implementacoes\MeuItem.cs" />
     <Compile Include="Ordenação\Implementacoes\Ordenacao.cs" />
+    <Compile Include="Ordenação\Implementacoes\Quicksort.cs" />
     <Compile Include="Ordenação\Interfaces\IOrdenacao.cs" />
     <Compile Include="Ordenação\Interfaces\Item.cs" />
     <Compile Include="Program.cs" />
